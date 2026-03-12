@@ -25,10 +25,18 @@ O objetivo deste projeto é realizar o desenvolvimento de um website institucion
   </ul>
 </div>
 
-FAZER ATÉ O DIA 17/03
+**FAZER ATÉ O DIA 17/03** ( Sem falta :exclamation:)
+
+<br/>
 Criar protótipo do site através do Figma e apresentar o protótipo para o cliente antes da terça-feira (18/03)
 
-FAZER ATÉ A O DIA 18/03
+<br/>
+<br/>
+<br/>
+
+**FAZER ATÉ A O DIA 18/03**
+
+<br/>
 Montar cronograma COMPLETO do projeto com todas as entregas do projeto, quando essas entregas serão realizadas (não precisa ser exatamente no dia escolhido no cronograma), e quando ocorrerão reuniões com o cliente para apresentar essas entregas.
 Discutir mais como o projeto será realizado (como hospedaremos o site), o que cada integrante quer fazer durante todo o processo do projeto, e pensar em formas de expandir o projeto atual.
 
