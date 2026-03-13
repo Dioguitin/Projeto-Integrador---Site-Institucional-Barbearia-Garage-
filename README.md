@@ -38,7 +38,7 @@ Criar protótipo do site através do Figma e apresentar o protótipo para o clie
 
 <br/>
 Montar cronograma COMPLETO do projeto com todas as entregas do projeto, quando essas entregas serão realizadas (não precisa ser exatamente no dia escolhido no cronograma), e quando ocorrerão reuniões com o cliente para apresentar essas entregas.
-Discutir mais como o projeto será realizado (como hospedaremos o site), o que cada integrante quer fazer durante todo o processo do projeto, e pensar em formas de expandir o projeto atual.
+Discutir mais como o projeto será realizado (como hospedaremos o site), o que cada integrante quer fazer durante todo o processo do projeto,divisão de trabalho dos participantes e pensar em formas de expandir o projeto atual.
 
 <br/>
 
