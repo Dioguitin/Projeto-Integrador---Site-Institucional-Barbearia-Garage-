@@ -27,7 +27,7 @@ O objetivo deste projeto é desenvolver de um site institucional para a barbeari
 
 
 **- Mostrar quadro Kanban organizado para o professor na aula ( DATA - 25/03 )** <br/><br/>
-Montar quadro Kanban no repositório do Github e inserir os cartões do projeto no backlog. <br/>
+Montar quadro Kanban no repositório do Github e inserir os cartões do projeto no backlog. **(Para acessar o quadro Kanban do projeto - Vá para a sessão "projects" do repositório.)** <br/>
 Também é necessário inserir uma descrição da tarefa em cada cartão e deixar decidido o que cada membro do grupo vai querer fazer.
 
 
@@ -44,6 +44,8 @@ Ajustar protótipo do site no Figma e receber feedback do cliente na reunião.
 <br/>
 
 <br/>
+
+---
 
 <div id="toc">
   <ul style="list-style: none">
@@ -67,6 +69,8 @@ Ajustar protótipo do site no Figma e receber feedback do cliente na reunião.
 <br/>
 <br/>
 <br/>
+
+---
 
 <div id="toc">
   <ul style="list-style: none">
@@ -100,3 +104,5 @@ Através do whattsapp. O cliente passa as informações do serviço desejado e o
 
 **Quantas unidades a Garage Barbearia possui?** <br/>
 Uma unidade, locazida em: Av. José Gonçalves de Medeiros, 2 - Loja A-3 - Madalena, Recife - PE
+
+---
