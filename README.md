@@ -77,8 +77,8 @@ Ajustar protótipo do site no Figma e receber feedback do cliente na reunião.
 </div>
 
 
-**Como o contato com o cliente consegue informações atualmente?** 
-Apenas através do whattsapp/instagram.
+**Como o contato com o cliente consegue informações atualmente?** <br/>
+Apenas através do whattsapp/instagram via contato com o atendente.
 
 <br/>
 <br/>
