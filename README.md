@@ -15,37 +15,40 @@
     </summary>
   </ul>
 </div>
-O objetivo deste projeto é realizar o desenvolvimento de um website institucional para a barbearia "Garage". O site funcionará como um HUB de informações relevantes sobre a barbearia, sobre seus serviços ofertados, e também como um meio de realizar agendamentos juntamente com o WhatsApp da empresa.
+O objetivo deste projeto é desenvolver de um site institucional para a barbearia Garage. O site funcionará como um HUB de informações relevantes sobre o estabelecimento, contendo informações seus serviços ofertados, apresentando a área de lazer, e também como um meio de realizar agendamentos juntamente com o WhatsApp da empresa.
 
 <div id="toc">
   <ul style="list-style: none">
     <summary>
-      <h1> :exclamation:Primeira entrega ( até no máximo 17/03 ) - </h1>
+      <h1> :exclamation:Próximas entregas  - </h1>
     </summary>
   </ul>
 </div>
 
-**FAZER ATÉ O DIA 17/03** ( Sem falta :exclamation:)
+
+**- Mostrar quadro Kanban organizado para o professor na aula ( DATA - 25/03 )** <br/><br/>
+Montar quadro Kanban no repositório do Github e inserir os cartões do projeto no backlog. <br/>
+Também é necessário inserir uma descrição da tarefa em cada cartão e deixar decidido o que cada membro do grupo vai querer fazer.
+
+
+
+<br/><br/><br/>
+
+
+**- Reunião com o cliente para apresentar protótipo  ( DATA - 27/03 )** 
+
+Ajustar protótipo do site no Figma e receber feedback do cliente na reunião.
 
 <br/>
-Criar protótipo do site através do Figma e apresentar o protótipo para o cliente antes da terça-feira (18/03)
-
 <br/>
 <br/>
-<br/>
-
-**FAZER ATÉ A O DIA 18/03**
-
-<br/>
-Montar cronograma COMPLETO do projeto com todas as entregas do projeto, quando essas entregas serão realizadas (não precisa ser exatamente no dia escolhido no cronograma), e quando ocorrerão reuniões com o cliente para apresentar essas entregas.
-Discutir mais como o projeto será realizado (como hospedaremos o site), o que cada integrante quer fazer durante todo o processo do projeto,divisão de trabalho dos participantes e pensar em formas de expandir o projeto atual.
 
 <br/>
 
 <div id="toc">
   <ul style="list-style: none">
     <summary>
-      <h1> Links do protótipo pelo Figma - </h1>
+      <h1> 🔎Links relevantes para a criação do protótipo - </h1>
     </summary>
   </ul>
 </div>
@@ -61,3 +64,39 @@ Discutir mais como o projeto será realizado (como hospedaremos o site), o que c
 
 [Exemplo de um site de barbearia](https://www.confrariadabarba.com.br)
 
+<br/>
+<br/>
+<br/>
+
+<div id="toc">
+  <ul style="list-style: none">
+    <summary>
+      <h1> 🗒️Informações sobre a barbearia 🖊️ - </h1>
+    </summary>
+  </ul>
+</div>
+
+
+**Como o contato com o cliente consegue informações atualmente?** 
+Apenas através do whattsapp/instagram.
+
+<br/>
+<br/>
+<br/>
+
+**Como os agendamentos são feitos?** <br/>
+Através do whattsapp. O cliente passa as informações do serviço desejado e o atendente deixa tudo agendado através do [Trinks da barbearia](https://www.trinks.com/barbeariaxandeedeby/framebusca?rwg_token=AFd1xnHXcgvJgyKHJS-lrrKE38O_UOblPLXvUVcph2Fc-I8HrTeH3vsFM5hJ9s01qa2n1oZJe-iExiZSEuvcqxM1dzYXXwni9A%3D%3D)
+
+<br/>
+<br/>
+<br/>
+
+**Por que os clientes não realizam o agendamento direto pelo Trinks?** <br/> <br/>
+**Os clientes da barbearia não querem criar contas no Trinks para fazerem seus agendamentos**, preferindo ir direto para o atendimento via WhattsApp. O Trinks acaba servindo apenas para organizar os agendamentos realizados.
+
+<br/>
+<br/>
+<br/>
+
+**Quantas unidades a Garage Barbearia possui?** <br/>
+Uma unidade, locazida em: Av. José Gonçalves de Medeiros, 2 - Loja A-3 - Madalena, Recife - PE
