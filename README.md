@@ -35,7 +35,7 @@ Também é necessário inserir uma descrição da tarefa em cada cartão e deixa
 <br/><br/><br/>
 
 
-**- Reunião com o cliente para apresentar protótipo  ( DATA - 27/03 )** 
+**- Reunião com o cliente para apresentar protótipo finalizado ( DATA - 27/03 )** 
 
 Ajustar protótipo do site no Figma e receber feedback do cliente na reunião.
 
