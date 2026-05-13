@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Agendamento | Garage Barbearia</title>
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="pagina-agendamento">
+
+<!-- HEADER -->
+
+<header class="header">
+
+  <div class="header-container">
+
+    <!-- LOGO -->
+    <a href="index.html" class="logo">
+      GARAGE
+    </a>
+
+    <!-- MENU -->
+    <nav class="nav">
+
+      <a href="index.html">
+        Início
+      </a>
+
+      <a href="Sobre.html">
+        Sobre
+      </a>
+
+      <a href="servicos.html">
+        Serviços
+      </a>
+
+      <a href="agendamento.html" class="active">
+        Agendamento
+      </a>
+
+      <a href="contato.html">
+        Contato
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+<!-- AGENDAMENTO -->
+
+<section class="agendamento-page">
+
+  <div class="agendamento-content">
+
+    <div class="hero-text">
+      <p class="tag">Agendamento Online</p>
+
+      <h1 class="title">
+        Agende seu <br />
+        <span>horário</span>
+      </h1>
+
+      <p class="subtitle">
+        Preencha os dados abaixo e envie sua solicitação diretamente para o WhatsApp da barbearia.
+      </p>
+    </div>
+
+    <form id="form-agendamento" class="form-agendamento">
+
+      <div class="form-group">
+        <label for="servico">Serviço</label>
+
+        <select id="servico" required>
+          <option value="">Selecione o serviço</option>
+          <option value="Cabelo">Cabelo</option>
+          <option value="Barba e Bigode">Barba e Bigode</option>
+          <option value="Combo">Combo</option>
+          <option value="Manicure Masculina">Manicure Masculina</option>
+          <option value="Pedicure Masculina">Pedicure Masculina</option>
+          <option value="Spa dos Pés">Spa dos Pés</option>
+          <option value="Reflexo / Luzes">Reflexo / Luzes</option>
+          <option value="Sobrancelha">Sobrancelha</option>
+          <option value="Cabelo - Penteados">Cabelo - Penteados</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="data">Data desejada</label>
+        <input type="date" id="data" required>
+      </div>
+
+      <div class="form-group">
+        <label for="hora">Horário desejado</label>
+
+        <select id="hora" required>
+          <option value="">Selecione o horário</option>
+
+          <optgroup label="Manhã">
+            <option value="09:00">09:00</option>
+            <option value="09:30">09:30</option>
+            <option value="10:00">10:00</option>
+            <option value="10:30">10:30</option>
+            <option value="11:00">11:00</option>
+            <option value="11:30">11:30</option>
+          </optgroup>
+
+          <optgroup label="Tarde">
+            <option value="12:00">12:00</option>
+            <option value="12:30">12:30</option>
+            <option value="13:00">13:00</option>
+            <option value="13:30">13:30</option>
+            <option value="14:00">14:00</option>
+            <option value="14:30">14:30</option>
+            <option value="15:00">15:00</option>
+            <option value="15:30">15:30</option>
+            <option value="16:00">16:00</option>
+            <option value="16:30">16:30</option>
+            <option value="17:00">17:00</option>
+            <option value="17:30">17:30</option>
+          </optgroup>
+
+          <optgroup label="Noite">
+            <option value="18:00">18:00</option>
+            <option value="18:30">18:30</option>
+            <option value="19:00">19:00</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="barbeiro">Profissional</label>
+
+        <select id="barbeiro" required>
+          <option value="">Selecione o profissional</option>
+          <option value="Xandinho">Xandinho</option>
+          <option value="João">João</option>
+          <option value="Sem preferência">Sem preferência</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn-primary">
+        Enviar pelo WhatsApp
+      </button>
+
+    </form>
+
+  </div>
+</section>
+
+<script>
+  const campoData = document.getElementById("data");
+  const hoje = new Date().toISOString().split("T")[0];
+
+  campoData.setAttribute("min", hoje);
+
+  const form = document.getElementById("form-agendamento");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const servico = document.getElementById("servico").value;
+    const data = document.getElementById("data").value;
+    const hora = document.getElementById("hora").value;
+    const barbeiro = document.getElementById("barbeiro").value;
+
+    if (!servico || !data || !hora || !barbeiro) {
+      alert("Preencha todos os campos!");
+      return;
+    }
+
+    const dataSelecionada = new Date(data + "T00:00:00");
+
+    if (dataSelecionada.getDay() === 0) {
+      alert("A barbearia não funciona aos domingos. Por favor, escolha outra data.");
+      return;
+    }
+
+    const numeroBarbearia = "5581999112609";
+
+    const dataFormatada = formatarData(data);
+
+    const mensagem = `Olá! Gostaria de agendar ${servico} no dia ${dataFormatada}, às ${hora}, com ${barbeiro}.`;
+
+    const mensagemCodificada = encodeURIComponent(mensagem);
+
+    const linkWhatsApp = `https://wa.me/${numeroBarbearia}?text=${mensagemCodificada}`;
+
+    window.open(linkWhatsApp, "_blank");
+  });
+
+  function formatarData(data) {
+    const partes = data.split("-");
+    return `${partes[2]}/${partes[1]}/${partes[0]}`;
+  }
+</script>
+
+</body>
+</html>
