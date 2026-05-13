@@ -141,7 +141,7 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  border-radius: 50px; /* 🔥 formato pill */
+  border-radius: 50px;
 
   text-decoration: none;
 
@@ -332,6 +332,151 @@ body {
   .header-btn{
     padding:12px 20px;
     font-size:11px;
+  }
+
+}
+
+/* =========================
+   PÁGINA DE AGENDAMENTO
+========================= */
+
+body.pagina-agendamento {
+  background:
+    linear-gradient(
+      to right,
+      rgba(0,0,0,0.85),
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.2)
+    ),
+    url('FotoAgendamento.png') center / cover no-repeat fixed;
+}
+
+.agendamento-page {
+  min-height: 100vh;
+
+  position: relative;
+
+  padding: 150px 0 80px 0;
+
+  background: transparent;
+}
+
+.agendamento-content {
+  position: relative;
+
+  max-width: 620px;
+
+  margin-left: 120px;
+
+  background: rgba(0, 0, 0, 0.62);
+
+  padding: 45px;
+
+  border: 1px solid rgba(201, 162, 74, 0.25);
+
+  backdrop-filter: blur(3px);
+}
+
+.agendamento-page .title {
+  font-size: 72px;
+
+  margin: 0;
+
+  line-height: 0.9;
+}
+
+.form-agendamento {
+  margin-top: 35px;
+
+  max-width: 460px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+
+  color: #d6d6d6;
+
+  font-size: 13px;
+
+  margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+
+  padding: 14px;
+
+  background: rgba(5, 5, 5, 0.9);
+
+  border: 1px solid #666;
+
+  color: #fff;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 14px;
+
+  color-scheme: dark;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+
+  border-color: #c9a24a;
+
+  box-shadow: 0 0 0 2px rgba(201, 162, 74, 0.18);
+}
+
+.form-group input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+
+  cursor: pointer;
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.form-agendamento .btn-primary {
+  margin-top: 10px;
+}
+
+/* RESPONSIVO DA PÁGINA DE AGENDAMENTO */
+
+@media(max-width:980px){
+
+  .agendamento-content {
+    margin: 0 auto;
+
+    max-width: 85%;
+  }
+
+  .agendamento-page .title {
+    font-size: 60px;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .agendamento-page {
+    padding-top: 190px;
+  }
+
+  .agendamento-content {
+    max-width: 90%;
+
+    padding: 30px;
+  }
+
+  .agendamento-page .title {
+    font-size: 48px;
   }
 
 }
