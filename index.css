@@ -482,4 +482,12 @@ body.pagina-agendamento {
     font-size: 48px;
   }
 
+  .hero-actions .btn-primary,
+  .hero-actions .btn-primary:link,
+  .hero-actions .btn-primary:visited,
+  .hero-actions .btn-primary:hover,
+  .hero-actions .btn-primary:active {
+    text-decoration: none;
+
+
 }
