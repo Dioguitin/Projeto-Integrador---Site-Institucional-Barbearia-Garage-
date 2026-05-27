@@ -1,0 +1,103 @@
+/* =========================
+   HEADER PREMIUM
+========================= */
+
+.header{
+  position:fixed;
+
+  top:0;
+  left:0;
+
+  width:100%;
+
+  z-index:1000;
+
+  backdrop-filter:blur(14px);
+
+  background:
+    rgba(5,5,5,0.55);
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.05);
+}
+
+/* CONTAINER */
+
+.header-container{
+  width:100%;
+  max-width:1300px;
+
+  margin:auto;
+
+  padding:22px 40px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* LOGO */
+
+.logo{
+  text-decoration:none;
+
+  color:#fff;
+
+  font-family:'Playfair Display', serif;
+
+  font-size:30px;
+
+  letter-spacing:4px;
+
+  font-weight:600;
+}
+
+/* MENU */
+
+.nav{
+  display:flex;
+  align-items:center;
+  gap:40px;
+}
+
+.nav a{
+  position:relative;
+
+  text-decoration:none;
+
+  color:#cfcfcf;
+
+  font-size:13px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+  transition:.4s;
+}
+
+/* LINHA HOVER */
+
+.nav a::after{
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  bottom:-8px;
+
+  width:0%;
+  height:1px;
+
+  background:#c9a24a;
+
+  transition:.4s ease;
+}
+
+.nav a:hover{
+  color:#fff;
+}
+
+.nav a:hover::after{
+  width:100%;
+}

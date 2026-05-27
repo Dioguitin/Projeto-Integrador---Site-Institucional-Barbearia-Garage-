@@ -1,0 +1,98 @@
+.hero {
+  height: 100vh;
+  background: url('barbearia.jpg') center/cover no-repeat;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.2)
+  );
+}
+
+.hero-content{
+  position:relative;
+
+  width:100%;
+  max-width:1300px;
+
+  margin:auto;
+
+  padding:180px 40px 100px;
+
+  min-height:100svh;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.title {
+  font-size:clamp(56px, 8vw, 82px);
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: -1px;
+}
+
+.btn-secondary {
+  margin-left: 15px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+
+/* TEXTO */
+.hero-text {
+  max-width: 500px;
+}
+
+.title span {
+  color: #c9a24a;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-top: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+/* BOTÕES */
+.hero-actions {
+  margin-top: 30px;
+}
+
+/* STATS */
+.hero-stats {
+  display: flex;
+  gap:28px;
+  margin-top: 50px;
+}
+
+.stat strong {
+  font-size: 24px;
+  color: #c9a24a;
+}
+
+.tag {
+  color: #c9a24a;
+  letter-spacing: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+* {
+  box-sizing: border-box;
+}
