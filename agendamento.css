@@ -1,0 +1,389 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0b0b0b;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #e0b95c;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(201,162,74,0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(201,162,74,0.2);
+}
+
+.title {
+  font-size: 90px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: -1px;
+}
+
+/* TEXTO */
+.hero-text {
+  max-width: 500px;
+}
+
+.title span {
+  color: #c9a24a;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-top: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.tag {
+  color: #c9a24a;
+  letter-spacing: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 12px 28px;
+  text-transform: uppercase;
+  font-size: 12px;
+
+  background: #c9a24a;
+  color: #000;
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* =========================
+   HEADER PREMIUM
+========================= */
+
+.header{
+  position:fixed;
+
+  top:0;
+  left:0;
+
+  width:100%;
+
+  z-index:1000;
+
+  backdrop-filter:blur(14px);
+
+  background:
+    rgba(5,5,5,0.55);
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.05);
+}
+
+/* CONTAINER */
+
+.header-container{
+  width:100%;
+  max-width:1300px;
+
+  margin:auto;
+
+  padding:22px 40px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* LOGO */
+
+.logo{
+  text-decoration:none;
+
+  color:#fff;
+
+  font-family:'Cormorant Garamond', serif;
+
+  font-size:30px;
+
+  letter-spacing:4px;
+
+  font-weight:600;
+}
+
+/* MENU */
+
+.nav{
+  display:flex;
+  align-items:center;
+  gap:40px;
+}
+
+.nav a{
+  position:relative;
+
+  text-decoration:none;
+
+  color:#cfcfcf;
+
+  font-size:13px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+  transition:.4s;
+}
+
+/* LINHA HOVER */
+
+.nav a::after{
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  bottom:-8px;
+
+  width:0%;
+  height:1px;
+
+  background:#c9a24a;
+
+  transition:.4s ease;
+}
+
+.nav a:hover{
+  color:#fff;
+}
+
+.nav a:hover::after{
+  width:100%;
+}
+
+/* LINK ATIVO */
+
+.nav a.active{
+  color:#fff;
+}
+
+.nav a.active::after{
+  width:100%;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:980px){
+
+  .header-container{
+    flex-direction:column;
+
+    gap:20px;
+  }
+
+  .nav{
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .header-container{
+    padding:20px;
+  }
+
+  .logo{
+    font-size:24px;
+  }
+
+  .nav a{
+    font-size:11px;
+    letter-spacing:1px;
+  }
+
+  .header-btn{
+    padding:12px 20px;
+    font-size:11px;
+  }
+
+}
+
+/* =========================
+   PÁGINA DE AGENDAMENTO
+========================= */
+
+body.pagina-agendamento {
+  background:
+    linear-gradient(
+      to right,
+      rgba(0,0,0,0.85),
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.2)
+    ),
+    url('FotoAgendamento.png') center / cover no-repeat fixed;
+}
+
+.agendamento-page {
+  min-height: 100vh;
+
+  position: relative;
+
+  padding: 150px 0 80px 0;
+
+  background: transparent;
+}
+
+.agendamento-content {
+  position: relative;
+
+  max-width: 620px;
+
+  margin-left: 120px;
+
+  background: rgba(0, 0, 0, 0.62);
+
+  padding: 45px;
+
+  border: 1px solid rgba(201, 162, 74, 0.25);
+
+  backdrop-filter: blur(3px);
+}
+
+.agendamento-page .title {
+  font-size: 72px;
+
+  margin: 0;
+
+  line-height: 0.9;
+}
+
+.form-agendamento {
+  margin-top: 35px;
+
+  max-width: 460px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+
+  color: #d6d6d6;
+
+  font-size: 13px;
+
+  margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+
+  padding: 14px;
+
+  background: rgba(5, 5, 5, 0.9);
+
+  border: 1px solid #666;
+
+  color: #fff;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 14px;
+
+  color-scheme: dark;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+
+  border-color: #c9a24a;
+
+  box-shadow: 0 0 0 2px rgba(201, 162, 74, 0.18);
+}
+
+.form-group input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+
+  cursor: pointer;
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.form-agendamento .btn-primary {
+  margin-top: 10px;
+}
+
+/* RESPONSIVO DA PÁGINA DE AGENDAMENTO */
+
+@media(max-width:980px){
+
+  .agendamento-content {
+    margin: 0 auto;
+
+    max-width: 85%;
+  }
+
+  .agendamento-page .title {
+    font-size: 60px;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .agendamento-page {
+    padding-top: 190px;
+  }
+
+  .agendamento-content {
+    max-width: 90%;
+
+    padding: 30px;
+  }
+
+  .agendamento-page .title {
+    font-size: 48px;
+  }
+
+  .campo-data {
+  cursor: pointer;
+  }
+
+  .campo-data {
+    cursor: pointer;
+  }
+
+  .campo-data::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    opacity: 1;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+
+}

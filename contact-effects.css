@@ -1,0 +1,51 @@
+/* ========================================
+BUTTONS
+======================================== */
+
+.btn-primary,
+.btn-secondary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:18px 30px;
+
+  text-decoration:none;
+
+  font-size:12px;
+
+  letter-spacing:3px;
+
+  transition:.4s;
+}
+
+/* PRIMARY */
+
+.btn-primary{
+  background:#c89b53;
+
+  color:#050505;
+
+  font-weight:600;
+}
+
+.btn-primary:hover{
+  transform:translateY(-4px);
+
+  box-shadow:
+    0 10px 40px rgba(200,155,83,0.30);
+}
+
+/* SECONDARY */
+
+.btn-secondary{
+  border:1px solid rgba(255,255,255,0.12);
+
+  color:#fff;
+}
+
+.btn-secondary:hover{
+  background:rgba(255,255,255,0.04);
+
+  transform:translateY(-4px);
+}

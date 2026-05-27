@@ -1,0 +1,195 @@
+/* ========================================
+HEADER RESPONSIVE
+======================================== */
+
+@media(max-width:768px){
+
+  .header-container{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .nav{
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+}
+
+@media(max-width:500px){
+
+  .nav a{
+    font-size:11px;
+  }
+
+}
+
+/* ========================================
+HERO RESPONSIVE
+======================================== */
+
+@media(max-width:1000px){
+
+  .contact-content h1{
+    font-size:72px;
+  }
+
+  .contact-content p{
+    font-size:18px;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .contact-container{
+    padding:180px 25px 100px;
+  }
+
+  .contact-content h1{
+    font-size:54px;
+  }
+
+  .hero-actions{
+    flex-direction:column;
+  }
+
+  .hero-footer{
+    position:relative;
+
+    right:auto;
+    bottom:auto;
+
+    margin-top:80px;
+
+    text-align:left;
+  }
+
+  .footer-location{
+    justify-content:flex-start;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .contact-container{
+    padding:160px 22px 90px;
+  }
+
+  .contact-content{
+    max-width:100%;
+  }
+
+  .contact-content h1{
+    font-size:36px;
+    line-height:1.08;
+    letter-spacing:-1px;
+  }
+
+  .contact-content h1 span{
+    display:block;
+  }
+
+  .contact-content p{
+    font-size:15px;
+    line-height:1.75;
+    max-width:95%;
+    color:#b8b8b8;
+  }
+
+  .hero-actions{
+    gap:14px;
+    margin-top:34px;
+  }
+
+  .btn-primary,
+  .btn-secondary{
+    width:100%;
+    justify-content:center;
+
+    padding:16px 22px;
+
+    font-size:11px;
+    letter-spacing:2px;
+  }
+
+  .hero-footer{
+    margin-top:65px;
+  }
+
+  .hero-footer p{
+    font-size:14px;
+  }
+
+}
+
+/* ========================================
+CONTACT INFO RESPONSIVE
+======================================== */
+
+@media(max-width:1000px){
+
+  .contact-info-container{
+    grid-template-columns:1fr;
+  }
+
+  .contact-left h2{
+    font-size:52px;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .contact-info{
+    padding:90px 20px;
+  }
+
+  .contact-left h2{
+    font-size:40px;
+  }
+
+}
+
+/* ========================================
+MAP RESPONSIVE
+======================================== */
+
+@media(max-width:768px){
+
+  .location-map{
+    min-height:650px;
+  }
+
+  .map-pin{
+    width:160px;
+    height:160px;
+  }
+
+}
+
+@media(max-width:500px){
+
+  .location-map{
+    min-height:520px;
+    border-radius:22px;
+  }
+
+  .map-pin{
+    width:130px;
+    height:130px;
+  }
+
+  .pulse-base{
+    width:70px;
+    height:70px;
+  }
+
+  .pulse-ring{
+    width:70px;
+    height:70px;
+  }
+
+}
