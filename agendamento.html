@@ -10,18 +10,15 @@
 
 <body class="pagina-agendamento">
 
-<!-- HEADER -->
 
 <header class="header">
 
   <div class="header-container">
 
-    <!-- LOGO -->
     <a href="index.html" class="logo">
       GARAGE
     </a>
 
-    <!-- MENU -->
     <nav class="nav">
 
       <a href="index.html">
@@ -50,8 +47,6 @@
 
 </header>
 
-<!-- AGENDAMENTO -->
-
 <section class="agendamento-page">
 
   <div class="agendamento-content">
@@ -78,7 +73,7 @@
           <option value="">Selecione o serviço</option>
           <option value="Cabelo">Cabelo</option>
           <option value="Barba e Bigode">Barba e Bigode</option>
-          <option value="Combo">Combo (Cabelo + Barba)</option>
+          <option value="Combo">Combo</option>
           <option value="Manicure Masculina">Manicure Masculina</option>
           <option value="Pedicure Masculina">Pedicure Masculina</option>
           <option value="Spa dos Pés">Spa dos Pés</option>
@@ -90,7 +85,7 @@
 
       <div class="form-group">
         <label for="data">Data desejada</label>
-        <input type="date" id="data" required>
+        <input type="date" id="data" class="campo-data" required>
       </div>
 
       <div class="form-group">
@@ -136,8 +131,8 @@
 
         <select id="barbeiro" required>
           <option value="">Selecione o profissional</option>
-          <option value="Alexandre">Alexandre</option>
-          <option value="Jefferson">Jefferson</option>
+          <option value="Xandinho">Xandinho</option>
+          <option value="João">João</option>
           <option value="Sem preferência">Sem preferência</option>
         </select>
       </div>
@@ -153,6 +148,13 @@
 
 <script>
   const campoData = document.getElementById("data");
+
+  campoData.addEventListener("click", function() {
+    if (typeof campoData.showPicker === "function") {
+      campoData.showPicker();
+    }
+  });
+
   const hoje = new Date().toISOString().split("T")[0];
 
   campoData.setAttribute("min", hoje);
