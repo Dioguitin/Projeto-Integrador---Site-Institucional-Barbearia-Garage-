@@ -72,15 +72,55 @@ HERO RESPONSIVE
 
 }
 
-@media(max-width:500px){
+@media(max-width:600px){
+
+  .contact-container{
+    padding:160px 22px 90px;
+  }
+
+  .contact-content{
+    max-width:100%;
+  }
 
   .contact-content h1{
-    font-size:42px;
+    font-size:36px;
+    line-height:1.08;
+    letter-spacing:-1px;
+  }
+
+  .contact-content h1 span{
+    display:block;
   }
 
   .contact-content p{
-    font-size:16px;
-    line-height:1.7;
+    font-size:15px;
+    line-height:1.75;
+    max-width:95%;
+    color:#b8b8b8;
+  }
+
+  .hero-actions{
+    gap:14px;
+    margin-top:34px;
+  }
+
+  .btn-primary,
+  .btn-secondary{
+    width:100%;
+    justify-content:center;
+
+    padding:16px 22px;
+
+    font-size:11px;
+    letter-spacing:2px;
+  }
+
+  .hero-footer{
+    margin-top:65px;
+  }
+
+  .hero-footer p{
+    font-size:14px;
   }
 
 }
