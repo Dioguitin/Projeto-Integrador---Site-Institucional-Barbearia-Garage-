@@ -1,0 +1,11 @@
+/* ==================================================
+   CONTACT PAGE IMPORTS
+================================================== */
+
+@import url('./contact-base.css');
+@import url('./contact-header.css');
+@import url('./contact-hero.css');
+@import url('./contact-cards.css');
+@import url('./contact-map.css');
+@import url('./contact-effects.css');
+@import url('./contact-responsive.css');
