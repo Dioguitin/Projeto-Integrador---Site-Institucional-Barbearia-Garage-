@@ -126,6 +126,21 @@
 
 }
 
+@media(max-width:600px){
+
+  .hero-stats{
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:16px;
+
+    width:100%;
+  }
+
+}
+
 @media(max-width:480px){
 
   .title{
@@ -143,3 +158,10 @@
 
 }
 
+@media(max-width:600px){
+
+  .hero-stats{
+    gap:18px;
+  }
+
+}
