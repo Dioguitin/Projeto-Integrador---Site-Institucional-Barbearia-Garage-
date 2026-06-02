@@ -83,8 +83,8 @@ HERO RESPONSIVE
   }
 
   .contact-content h1{
-    font-size:36px;
-    line-height:1.08;
+    font-size:32px;
+    line-height:1.05;
     letter-spacing:-1px;
   }
 
@@ -92,16 +92,17 @@ HERO RESPONSIVE
     display:block;
   }
 
-  .contact-content p{
-    font-size:15px;
-    line-height:1.75;
+.contact-content p{
+  font-size:14px;
+  line-height:1.7;
+  max-width:320px;
     max-width:95%;
     color:#b8b8b8;
   }
 
   .hero-actions{
     gap:14px;
-    margin-top:34px;
+    margin-top:28px;
   }
 
   .btn-primary,
@@ -109,14 +110,14 @@ HERO RESPONSIVE
     width:100%;
     justify-content:center;
 
-    padding:16px 22px;
+    padding: 16px 22px;
 
     font-size:11px;
     letter-spacing:2px;
   }
 
   .hero-footer{
-    margin-top:65px;
+  margin-top:50px;
   }
 
   .hero-footer p{
@@ -148,11 +149,23 @@ CONTACT INFO RESPONSIVE
   }
 
   .contact-left h2{
-    font-size:40px;
+    font-size:30px;
   }
 
 }
 
+.info-text strong{
+  font-size:13px;
+}
+
+.info-text p{
+  font-size:15px;
+}
+
+
+  .info-text small{
+    font-size:9px;
+  }
 /* ========================================
 MAP RESPONSIVE
 ======================================== */

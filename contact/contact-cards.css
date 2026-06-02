@@ -20,6 +20,10 @@ CONTACT INFO
   gap:40px;
 }
 
+.contact-info {
+  scroll-margin-top: 100px;
+}
+
 /* LEFT */
 
 .contact-left h2{
@@ -106,24 +110,26 @@ INFO CARD PREMIUM
 /* ICON */
 
 .info-icon{
-  width:36px;
-  height:36px;
-  height:56px;
-
-  border-radius:12px;
-
   display:flex;
   align-items:center;
   justify-content:center;
 
-  border:1px solid rgba(200,155,83,0.22);
-
   color:#c89b53;
 
-  font-size:13px;
+  flex-shrink:0;
 
-  background:
-    rgba(200,155,83,0.03);
+  width:auto;
+  height:auto;
+
+  border:none;
+  background:none;
+}
+
+.info-icon svg{
+  width:18px;
+  height:18px;
+
+  stroke:#c89b53;
 }
 
 /* TEXT */
