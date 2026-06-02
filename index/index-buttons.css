@@ -15,8 +15,13 @@
   border: none;
   cursor: pointer;
 
+  text-decoration: none;
+  display: inline-block;
+
   transition: all 0.3s ease;
 }
+
+
 
 .btn-primary:hover {
   background: #e0b95c;
@@ -41,4 +46,7 @@
   padding:10px 18px;
 
   font-size:11px;
+
+  text-decoration: none;
+  display: inline-block;
 }
