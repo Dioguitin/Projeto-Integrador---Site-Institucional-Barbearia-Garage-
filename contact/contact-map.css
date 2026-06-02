@@ -165,3 +165,17 @@ MAP
   }
 
 }
+
+.location-map,
+.location-map:link,
+.location-map:visited,
+.location-map:hover,
+.location-map:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.location-map {
+  cursor: pointer;
+  display: block;
+}
