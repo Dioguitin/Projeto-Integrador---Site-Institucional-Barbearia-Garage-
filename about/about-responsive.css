@@ -1,102 +1,326 @@
-/* RESPONSIVO */
+/* =========================================
+   ABOUT — RESPONSIVIDADE
+   Breakpoints: 1100 → 700 → 480 → 360
+========================================= */
 
+/* -------------------------
+   TABLET  (até 1100px)
+------------------------- */
+@media (max-width: 1100px) {
 
-@media(max-width:1100px){
-
-
-  .about-top{
-    flex-direction:column;
+  /* Hero */
+  .about-top {
+    flex-direction: column;
+    gap: 40px;
   }
-
 
   .left,
-  .right{
-    width:100%;
+  .right {
+    width: 100%;
   }
 
-
-  h1{
-    font-size:58px;
+  .about-title {
+    font-size: 52px;
   }
 
-
-  .gallery{
-    grid-template-columns:1fr;
+  .right p {
+    font-size: 16px;
   }
 
-
-  .stats{
-    grid-template-columns:1fr 1fr;
+  /* Galeria */
+  .gallery {
+    grid-template-columns: 1fr 1fr;
   }
 
-
-  .features{
-    grid-template-columns:1fr 1fr;
+  /* Stats */
+  .stats {
+    grid-template-columns: 1fr 1fr;
   }
 
-
-}
-
-
-@media(max-width:700px){
-
-
-  .container{
-    padding:80px 20px;
+  /* Cards */
+  .features {
+    grid-template-columns: 1fr 1fr;
   }
 
-
-  h1{
-    font-size:42px;
+  .feature-card {
+    padding: 28px;
   }
 
-
-  .top-grid{
-    grid-template-columns:1fr;
-  }
-
-
-  .stats{
-    grid-template-columns:1fr;
-  }
-
-
-  .features{
-    grid-template-columns:1fr;
-  }
-
-
-}
-
-/* RESPONSIVO */
-
-@media(max-width:900px){
-
-  .header-container{
-    flex-direction:column;
-
-    gap:20px;
-  }
-
-  .nav{
-    gap:20px;
-
-    flex-wrap:wrap;
-
-    justify-content:center;
+  .feature-card h3 {
+    font-size: 22px;
   }
 
 }
 
-@media(max-width:600px){
+/* -------------------------
+   MOBILE  (até 700px)
+------------------------- */
+@media (max-width: 700px) {
 
-  .logo{
-    font-size:22px;
+  /* Container */
+  .container {
+    padding: 100px 24px 60px;
   }
 
-  .nav a{
-    font-size:11px;
-    letter-spacing:1px;
+  /* Hero */
+  .about-title {
+    font-size: 38px;
+    line-height: 1.1;
+  }
+
+  .mini-title {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+
+  .right p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .line-info {
+    margin-top: 24px;
+    gap: 12px;
+  }
+
+  .line {
+    width: 30px;
+  }
+
+  /* Galeria */
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stats */
+  .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Cards */
+  .features {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 48px;
+  }
+
+  .feature-card {
+    padding: 24px;
+  }
+
+  .feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .feature-card p {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .feature-icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 20px;
   }
 
 }
+
+/* -------------------------
+   HEADER
+------------------------- */
+@media (max-width: 768px) {
+
+  .header-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .nav a {
+    font-size: 11px;
+  }
+
+}
+
+/* -------------------------
+   MOBILE  (até 768px) — compensa header em 2 linhas
+------------------------- */
+@media (max-width: 768px) {
+
+  .container {
+    padding-top: 160px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .container {
+    padding: 150px 18px 50px; /* era 90px */
+  }
+
+}
+
+
+@media (max-width: 360px) {
+
+  .container {
+    padding: 180px 16px 48px; /* era 85px */
+  }
+
+}
+
+/* -------------------------
+   LOCATION
+------------------------- */
+
+/* -------------------------
+   LOCATION
+------------------------- */
+@media (max-width: 768px) {
+
+  .location {
+    grid-template-columns: 1fr;
+  }
+
+  .location-left,
+  .location-right {
+    padding: 40px 32px;
+  }
+
+  .location-right {
+    border-left: none;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .location {
+    margin-top: 60px;
+    border-radius: 24px;
+  }
+
+  .location-left,
+  .location-right {
+    padding: 32px 24px;
+  }
+
+  .location-left h2 {
+    font-size: 32px;
+  }
+
+  .address {
+    gap: 16px;
+  }
+
+  .icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+  }
+
+  .btn-location {
+    width: 100%;
+  }
+
+  .hour-box {
+    padding: 20px 24px;
+  }
+
+  .hour-box h4 {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 360px) {
+
+  .location-left,
+  .location-right {
+    padding: 28px 20px;
+  }
+
+  .location-left h2 {
+    font-size: 28px;
+  }
+
+  .address {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+
+  .address strong {
+    font-size: 15px;
+  }
+
+  .address p {
+    font-size: 14px;
+  }
+
+  .address span {
+    font-size: 13px;
+  }
+
+  .hour-box {
+    padding: 18px 20px;
+  }
+
+  .hour-box h4 {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .location-left,
+  .location-right {
+    padding: 24px 16px;
+  }
+
+  .location-left h2 {
+    font-size: 25px;
+  }
+
+  .btn-location {
+    padding: 16px 20px;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .hour-box {
+    padding: 16px;
+  }
+
+  .hour-box small {
+    font-size: 10px;
+  }
+
+  .hour-box h4 {
+    font-size: 17px;
+  }
+
+}
+
