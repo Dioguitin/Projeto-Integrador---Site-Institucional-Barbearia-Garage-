@@ -17,7 +17,6 @@ rel="stylesheet">
 
 <body class="pagina-agendamento">
 
-
 <header class="header">
 
   <div class="header-container">
@@ -75,175 +74,203 @@ rel="stylesheet">
 
       <div class="form-group service-wrapper">
 
-  <label for="servico">
-    Serviço
-  </label>
+        <label for="servico">
+          Serviço
+        </label>
 
-  <select id="servico" required>
+        <select id="servico" required>
 
-    <option value="">Selecione o serviço</option>
+          <option value="">Selecione o serviço</option>
 
-    <option value="Cabelo">Cabelo</option>
-    <option value="Barba e Bigode">Barba e Bigode</option>
-    <option value="Combo">Combo</option>
-    <option value="Manicure Masculina">Manicure Masculina</option>
-    <option value="Pedicure Masculina">Pedicure Masculina</option>
-    <option value="Spa dos Pés">Spa dos Pés</option>
-    <option value="Reflexo / Luzes">Reflexo / Luzes</option>
-    <option value="Sobrancelha">Sobrancelha</option>
-    <option value="Cabelo - Penteados">Cabelo - Penteados</option>
+          <option value="Cabelo">Cabelo</option>
+          <option value="Barba e Bigode">Barba e Bigode</option>
+          <option value="Combo (cabelo + barba)">Combo (cabelo + barba)</option>
+          <option value="Manicure Masculina">Manicure Masculina</option>
+          <option value="Pedicure Masculina">Pedicure Masculina</option>
+          <option value="Spa dos Pés">Spa dos Pés</option>
+          <option value="Reflexo / Luzes">Reflexo / Luzes</option>
+          <option value="Sobrancelha">Sobrancelha</option>
+          <option value="Cabelo - Penteados">Cabelo - Penteados</option>
 
-  </select>
+        </select>
 
-  <div class="service-icon">
+        <div class="service-icon">
 
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="18"
-      height="18"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="1.7"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    >
-      <circle cx="6" cy="6" r="3"></circle>
-      <path d="M8.12 8.12 12 12"></path>
-      <path d="M20 4 8.12 15.88"></path>
-      <circle cx="6" cy="18" r="3"></circle>
-      <path d="M14.8 14.8 20 20"></path>
-    </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="6" cy="6" r="3"></circle>
+            <path d="M8.12 8.12 12 12"></path>
+            <path d="M20 4 8.12 15.88"></path>
+            <circle cx="6" cy="18" r="3"></circle>
+            <path d="M14.8 14.8 20 20"></path>
+          </svg>
 
-  </div>
+        </div>
 
-</div>
+      </div>
 
-<div class="form-group date-wrapper">
+      <div class="form-group date-wrapper">
 
-  <label for="data">
-    Data desejada
-  </label>
+        <label for="data">
+          Data desejada
+        </label>
 
-  <input
-    type="date"
-    id="data"
-    class="campo-data"
-    required
-  >
+        <input
+          type="date"
+          id="data"
+          class="campo-data"
+          required
+        >
 
-  <div class="date-icon">
+        <div class="date-icon">
 
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="18"
-      height="18"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="1.7"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    >
-      <rect
-        x="3"
-        y="4"
-        width="18"
-        height="18"
-        rx="2"
-      />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect
+              x="3"
+              y="4"
+              width="18"
+              height="18"
+              rx="2"
+            />
 
-      <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="16" y1="2" x2="16" y2="6" />
 
-      <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
 
-      <line x1="3" y1="10" x2="21" y2="10" />
-    </svg>
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
 
-  </div>
+        </div>
 
-</div>
+      </div>
 
       <div class="form-group time-wrapper">
 
-  <label for="hora">
-    Horário desejado
-  </label>
+        <label for="hora">
+          Horário desejado
+        </label>
 
-  <select id="hora" required>
+        <select id="hora" required>
 
-    <option value="">Selecione o horário</option>
+          <option value="">Selecione o horário</option>
 
-    <optgroup label="Manhã">
-      <option value="09:00">09:00</option>
-      <option value="09:30">09:30</option>
-      <option value="10:00">10:00</option>
-      <option value="10:30">10:30</option>
-      <option value="11:00">11:00</option>
-      <option value="11:30">11:30</option>
-    </optgroup>
+          <optgroup label="Manhã">
+            <option value="09:00">09:00</option>
+            <option value="09:30">09:30</option>
+            <option value="10:00">10:00</option>
+            <option value="10:30">10:30</option>
+            <option value="11:00">11:00</option>
+            <option value="11:30">11:30</option>
+          </optgroup>
 
-    <!-- restante dos horários -->
+          <optgroup label="Tarde">
+            <option value="12:00">12:00</option>
+            <option value="12:30">12:30</option>
+            <option value="13:00">13:00</option>
+            <option value="13:30">13:30</option>
+            <option value="14:00">14:00</option>
+            <option value="14:30">14:30</option>
+            <option value="15:00">15:00</option>
+            <option value="15:30">15:30</option>
+            <option value="16:00">16:00</option>
+            <option value="16:30">16:30</option>
+            <option value="17:00">17:00</option>
+            <option value="17:30">17:30</option>
+          </optgroup>
 
-  </select>
+          <optgroup label="Noite">
+            <option value="18:00">18:00</option>
+            <option value="18:30">18:30</option>
+            <option value="19:00">19:00</option>
+          </optgroup>
 
-  <div class="time-icon">
+        </select>
 
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="18"
-      height="18"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="1.7"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    >
-      <circle cx="12" cy="12" r="10"></circle>
-      <polyline points="12 6 12 12 16 14"></polyline>
-    </svg>
+        <div class="time-icon">
 
-  </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
 
-</div>
+        </div>
+
+      </div>
 
       <div class="form-group professional-wrapper">
 
-  <label for="barbeiro">
-    Profissional
-  </label>
+        <label for="barbeiro">
+          Profissional
+        </label>
 
-  <select id="barbeiro" required>
+        <select id="barbeiro" required>
 
-    <option value="">Escolha um profissional</option>
+          <option value="">Selecione o profissional</option>
 
-    <option value="Xandinho">Xandinho</option>
-    <option value="Jefferson">Jefferson</option>
-    <option value="Sem preferência">Sem preferência</option>
+          <option value="Xandinho">Xandinho</option>
+          <option value="João">João</option>
+          <option value="Sem preferência">Sem preferência</option>
 
-  </select>
+        </select>
 
-  <div class="professional-icon">
+        <div class="professional-icon">
 
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="18"
-      height="18"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="1.7"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    >
-      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-      <circle cx="12" cy="7" r="4"></circle>
-    </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+
+        </div>
+
+      </div>
+
+      <button type="submit" class="btn-primary">
+        Enviar pelo WhatsApp
+      </button>
+
+    </form>
 
   </div>
 
-</div>
 </section>
 
 <script>
