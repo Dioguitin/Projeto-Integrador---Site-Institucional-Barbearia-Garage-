@@ -20,10 +20,11 @@
   position:relative;
 
   width:100%;
+  max-width:1300px;
 
-  margin:auto;
+  margin:0 auto;
 
-  padding:180px 40px 100px;
+  padding:140px 1px 72px;
 
   min-height:100svh;
 
@@ -75,13 +76,13 @@
 
 /* STATS */
 .hero-stats {
-  display: flex;
-  gap:28px;
-  margin-top: 50px;
+  display:flex;
+  gap:14px;
+  margin-top:34px;
 }
 
 .stat strong {
-  font-size: 24px;
+  font-size: 20px;
   color: #c9a24a;
 }
 
@@ -91,6 +92,8 @@
   font-size: 10px;
   font-weight: 500;
   text-transform: uppercase;
+  margin-bottom:8px;
+  display:inline-block;
 }
 * {
   box-sizing: border-box;

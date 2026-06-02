@@ -18,6 +18,25 @@ body{
 
   margin:auto;
 
-  padding-left:40px;
-  padding-right:40px;
+  padding:120px 40px;
+  padding-top:180px;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-track{
+  background:#050505;
+}
+
+::-webkit-scrollbar-thumb{
+  background:rgba(200,155,83,0.55);
+  border-radius:999px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:rgba(200,155,83,0.85);
 }

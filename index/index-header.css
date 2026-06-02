@@ -29,26 +29,25 @@
 
   margin:auto;
 
-  padding:22px 40px;
+  padding:18px 30px;
 
   display:flex;
   align-items:center;
-  justify-content:space-between;
+  justify-content:center;
+
+  gap:120px;
 }
 
 /* LOGO */
 
 .logo{
   text-decoration:none;
-
   color:#fff;
 
   font-family:'Playfair Display', serif;
 
   font-size:30px;
-
-  letter-spacing:4px;
-
+  letter-spacing:5px;
   font-weight:600;
 }
 
@@ -57,7 +56,7 @@
 .nav{
   display:flex;
   align-items:center;
-  gap:40px;
+  gap:45px;
 }
 
 .nav a{
@@ -65,7 +64,7 @@
 
   text-decoration:none;
 
-  color:#cfcfcf;
+  color:#bdbdbd;
 
   font-size:13px;
 
@@ -101,3 +100,12 @@
 .nav a:hover::after{
   width:100%;
 }
+
+.nav a.active{
+  color:#c89b53;
+}
+
+.nav a.active::after{
+  width:100%;
+}
+
