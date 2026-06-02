@@ -1,0 +1,119 @@
+/* ========================================
+HEADER
+======================================== */
+
+.header{
+  position:fixed;
+
+  top:0;
+  left:0;
+
+  width:100%;
+
+  z-index:999;
+
+  backdrop-filter:blur(14px);
+
+  background:
+    rgba(5,5,5,0.45);
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.04);
+}
+
+/* CONTAINER */
+
+.header-container{
+  width:100%;
+  max-width:1300px;
+
+  margin:auto;
+
+  padding:18px 30px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  gap:120px;
+}
+
+/* LOGO */
+
+.logo{
+  text-decoration:none;
+
+  color:#fff;
+
+  font-family:'Playfair Display', serif;
+
+  font-size:30px;
+
+  letter-spacing:5px;
+
+  font-weight:600;
+}
+
+
+/* NAV */
+
+.nav{
+  display:flex;
+  align-items:center;
+
+  gap:45px;
+}
+
+.nav a{
+  position:relative;
+
+  text-decoration:none;
+
+  color:#bdbdbd;
+
+  font-size:13px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+  transition:.4s;
+}
+
+/* UNDERLINE */
+
+.nav a::after{
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  bottom:-8px;
+
+  width:0%;
+  height:1px;
+
+  background:#c89b53;
+
+  transition:.4s;
+}
+
+/* HOVER */
+
+.nav a:hover{
+  color:#fff;
+}
+
+.nav a:hover::after{
+  width:100%;
+}
+
+/* ACTIVE */
+
+.nav a.active{
+  color:#c89b53;
+}
+
+.nav a.active::after{
+  width:100%;
+}

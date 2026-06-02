@@ -1,0 +1,186 @@
+@media (max-width: 768px){
+
+  .services-list{
+    max-width:100%;
+  }
+
+  .service-item{
+    grid-template-columns:
+    50px
+    1fr
+    1.2fr
+    80px
+    90px
+    30px;
+
+    gap:14px;
+    padding:24px 0;
+  }
+
+  .service-title{
+    font-size:22px;
+  }
+
+  .service-price{
+    font-size:21px;
+  }
+
+  .service-description{
+    font-size:12px;
+  }
+
+    .heading-grid{
+    gap:40px;
+  }
+
+  .heading-grid h2{
+    font-size:48px;
+  }
+
+  .heading-grid p{
+    font-size:15px;
+  }
+
+    .header-container{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .nav{
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+    .nav a{
+    font-size:11px;
+  }
+
+}
+
+@media (max-width: 600px){
+
+  .service-item{
+
+    grid-template-columns:1fr;
+
+    gap:12px;
+
+    padding:24px;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:20px;
+
+    margin-bottom:14px;
+
+    background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.02),
+      rgba(255,255,255,.01)
+    );
+  }
+
+
+  .service-description{
+    max-width:100%;
+  }
+
+    .services-heading{
+    margin-bottom:60px;
+  }
+
+  .heading-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+
+  .heading-grid h2{
+    font-size:40px;
+    line-height:1.1;
+  }
+
+  .heading-grid p{
+    max-width:100%;
+    font-size:15px;
+    line-height:1.8;
+  }
+
+
+}
+
+@media (max-width: 360px){
+
+  .service-item{
+    padding:20px;
+  }
+
+  .service-title{
+    font-size:20px;
+  }
+
+  .service-price{
+    font-size:22px;
+  }
+
+  .service-description{
+    font-size:12px;
+    line-height:1.6;
+  }
+
+  .service-number{
+    letter-spacing:3px;
+  }
+
+    .section-label{
+    font-size:11px;
+    letter-spacing:3px;
+  }
+
+  .heading-grid h2{
+    font-size:34px;
+  }
+
+  .heading-grid p{
+    font-size:14px;
+  }
+
+
+}
+
+@media (max-width: 320px){
+
+  .service-item{
+    padding:18px;
+  }
+
+  .service-title{
+    font-size:18px;
+  }
+
+  .service-price{
+    font-size:20px;
+  }
+
+  .service-duration{
+    font-size:10px;
+    letter-spacing:2px;
+  }
+
+  .service-number{
+    font-size:10px;
+    letter-spacing:2px;
+  }
+
+    .heading-grid h2{
+    font-size:30px;
+  }
+
+  .heading-grid p{
+    font-size:13px;
+    line-height:1.7;
+  }
+
+}

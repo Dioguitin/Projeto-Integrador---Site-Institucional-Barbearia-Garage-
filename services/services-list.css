@@ -1,0 +1,115 @@
+.service-item{
+  display:grid;
+}
+
+
+.services-list{
+  max-width:1080px;
+  margin:0 auto;
+}
+
+.service-item{
+  display:grid;
+
+grid-template-columns:
+60px
+1fr
+1.1fr
+90px
+90px
+40px;
+
+  align-items:center;
+
+  gap:20px;
+
+  padding:38px 0;
+
+  color:inherit;
+
+  border-bottom:
+  1px solid rgba(255,255,255,.06);
+
+  transition:.4s ease;
+}
+
+.service-number{
+  color:#555;
+
+  font-size:11px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+}
+
+.service-title{
+  font-family:'Playfair Display',serif;
+
+  font-size:27px;
+
+  font-weight:500;
+
+  color:#f5f5f5;
+}
+
+.service-description{
+  color:#9a9a9a;
+
+  font-size:13px;
+
+  line-height:1.8;
+
+  max-width:340px;
+}
+
+.service-duration{
+  color:#777;
+
+  font-size:11px;
+
+  letter-spacing:4px;
+}
+
+.service-price{
+  color:#c89b53;
+
+  font-family:'Playfair Display',serif;
+
+  font-size:25px;
+  font-weight:500;
+}
+
+.service-arrow{
+  font-size:22px;
+
+  color:#b8b8b8;
+
+  transition:.35s;
+}
+
+.service-item{
+  transform:translateX(0);
+
+  transition:
+    transform .4s ease,
+    background .4s ease;
+}
+
+.service-item:hover{
+  transform:translateX(12px);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(200,155,83,.04),
+      transparent
+    );
+}
+
+.service-item:hover .service-arrow{
+  transform:translate(6px,-6px);
+
+  color:#c89b53;
+}
+
