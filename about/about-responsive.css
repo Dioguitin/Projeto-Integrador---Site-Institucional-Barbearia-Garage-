@@ -324,3 +324,34 @@
 
 }
 
+
+/* MOBILE PEQUENO */
+@media (max-width: 360px) {
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-box {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .stat-box:last-child {
+    border-bottom: none;
+  }
+
+}
+
+@media (max-width: 360px) {
+
+  .stat-box h2 {
+    font-size: 27px;
+  }
+
+  .stat-box p {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+}
